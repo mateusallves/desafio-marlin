@@ -1,0 +1,66 @@
+<div>
+  <a
+    class="link-container"
+    [routerLink]="['/']"
+    routerLinkActive="router-link-active"
+  >
+    <i class="material-icons">arrow_back</i>
+    Voltar a página anterior </a
+  ><br />
+
+  <div class="label-container">Cadastro de novas indicações</div>
+</div>
+<mat-card>
+  <mat-card-title>Dados do cliente</mat-card-title>
+  <form>
+    <p>Nome</p>
+    <input
+      matInput
+      placeholder="Digite aqui o nome completo do cliente"
+      [(ngModel)]="client.nome"
+      name="name"
+      required
+    />
+
+    <p>Corretor</p>
+    <input
+      matInput
+      placeholder="Digite aqui o nome do corretor"
+      [(ngModel)]="client.corretor"
+      name="corretor"
+      required
+    />
+
+    <p>Telefone</p>
+    <input
+      class="phone"
+      matInput
+      placeholder="DDD + telefone "
+      name="number"
+      [(ngModel)]="client.telefone"
+      required="true"
+    />
+
+    <p>E-mail</p>
+    <input
+      matInput
+      placeholder="Insira aqui o e-mail do cliente"
+      name="e-mail"
+      [(ngModel)]="client.email"
+      required="true"
+    />
+
+    <p>Empresa</p>
+    <input
+      matInput
+      placeholder="Insira aqui o e-mail do cliente"
+      name="empresa"
+      [(ngModel)]="client.empresa"
+    />
+  </form>
+  <button class="cancel" mat-raised-button (click)="cancel()">Cancelar</button>
+
+  <button class="save" mat-raised-button (click)="createProduct()">
+    Salvar e continuar
+  </button>
+</mat-card>

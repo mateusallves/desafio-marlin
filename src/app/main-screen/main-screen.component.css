@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap");
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height: 84vh;
+  margin: 80px 200px;
+}
+.button-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 5vh;
+  background-color: #40cfcb;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  color: white;
+  border-color: #40cfcb;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.button-create:hover {
+  cursor: pointer;
+}
+
+.button-create a {
+  text-decoration: none;
+  color: inherit;
+}
+.list-summary {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  width: 250px;
+  height: 10vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgb(228, 226, 226);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  position: relative;
+  color: #2aa7a2;
+}
+.list-summary p {
+  font-size: 3rem;
+  margin: 13px;
+  font-weight: 700;
+}
+
+.list-summary:hover {
+  background-color: #009e9a;
+  color: white;
+}
+
+.table-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.table-container {
+  background-color: #343224;
+  color: white;
+  height: 3vw;
+}
+
+.table-container th {
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding-right: 250px;
+  background-color: #343224;
+  color: white;
+  height: 3vw;
+}
+
+.table-container td {
+  max-width: 15ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  background-color: #f7f7f7;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1 rem;
+  box-shadow: 0 5px 5px rgb(228, 226, 226);
+  font-weight: 600;
+  justify-content: center;
+}
+
+i {
+  margin-left: 20px;
+  color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .main-container {
+    width: 100%px;
+  }
+  .table-container {
+    width: 100%px;
+  }
+}

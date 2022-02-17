@@ -1,0 +1,16 @@
+<a
+  class="link-container"
+  [routerLink]="['/']"
+  routerLinkActive="router-link-active"
+>
+  <i class="material-icons">arrow_back</i>
+  Voltar a página anterior </a
+><br />
+<mat-card>
+  <mat-card-title>Deseja deletar o Produto?</mat-card-title>
+
+  <button mat-raised-button (click)="deleteProduct()" class="button-color">
+    Deletar
+  </button>
+  <button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
